@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color */
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333; /* Dark text color */
+}
+
+h2 {
+    margin: 20px 0;
+    text-align: center;
+    color: #333; /* Dark text color */
+}
+
+p {
+    text-align: center;
+    margin: 10px 20px;
+    color: #666; /* Grey text color */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background for navbar */
+    padding: 15px 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px; /* Spacing between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white; /* Link color */
+    font-size: 18px;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-links a:hover {
+    color: #ddd; /* Lighter color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links on small screens */
+        flex-direction: column; /* Stack links vertically */
+        width: 100%;
+        background-color: #333; /* Background for dropdown */
+        position: absolute; /* Positioning for dropdown */
+        top: 60px; /* Position below the navbar */
+        left: 0; /* Align to left */
+        z-index: 1000; /* Ensure dropdown is above other elements */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .navbar {
+        flex-direction: column; /* Stack logo and toggle vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .navbar .toggle {
+        display: block; /* Show hamburger icon */
+        cursor: pointer; /* Pointer cursor for toggle */
+        font-size: 24px;
+        color: white; /* Color for hamburger icon */
+        margin-bottom: 10px; /* Space below the icon */
+    }
+}
+
+/* Hamburger Menu Icon */
+.toggle {
+    display: none; /* Hidden on larger screens */
+    cursor: pointer; /* Pointer cursor for toggle */
+    font-size: 24px; /* Size of the hamburger icon */
+    color: white; /* Color of the icon */
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px;
+    margin: 20px 0;
+    background-color: white; /* White background for sections */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
