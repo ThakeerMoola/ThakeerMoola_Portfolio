@@ -21,6 +21,11 @@ section {
     margin-bottom: 20px;
     color: whitesmoke;
   }
+  section h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: whitesmoke;
+  }
   
   section p {
     text-align: center;
@@ -31,6 +36,11 @@ section {
   .navbar-brand {
     font-weight: bold;
     font-size: 20px;
+    
+  }
+
+  .navbar-brand a{
+    color: white;
   }
   
   /* Center the container content */

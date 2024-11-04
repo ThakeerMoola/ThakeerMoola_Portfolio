@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Thakeer Moola Portfolio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/Styling.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
+    <!-- Background Video -->
+<video id="bg-video" autoplay loop muted playsinline>
+    <source src="/Videos/bgvideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+<!-- Navbar -->
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -22,24 +30,55 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">Home</a></li>
-
-        <li><a href="About.html">About</a></li>
-        <li><a href="Skills.html">Skills</a></li>
-        <li><a href="Project.html">Projects</a></li>
-        <li class="active"><a href="Contact.html">Contact</a></li>
-        
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li class="active"></li>><a href="#contact">Contact</a></li>
       </ul>
-      
     </div>
   </div>
 </nav>
-  
-<div class="container">
-  <h3>Collapsible Navbar</h3>
-  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
-  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
-</div>
+
+<!-- Sections -->
+<section id="home">
+    <h2>Welcome to My Portfolio</h2>
+    <h3>Code enthusiast by day, bug hunter by night. As a final-year IT student, I've sharpened my skills in Java, C#, and more, and now I’m on the lookout for opportunities to turn big ideas into slick software. Let’s turn dreams into deploys!
+    </h3>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a dedicated and hardworking final-year student pursuing a Diploma in IT in Software
+        Development. I have a strong passion for coding and have developed my proficiency in
+        various programming languages, including JAVA, HTML, PHP, JavaScript, C#, MVC ASP.NET
+        and Android Development as well as database management systems like MySQL and
+        Oracle.
+        My coursework and personal projects have given me a solid foundation in software
+        development principles, including object-oriented programming, database management,
+        and agile methodologies. I am actively seeking entry-level positions, internships or graduate
+        programmes where I can contribute to innovative software solutions while continuing to
+        learn and grow within the industry.</p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <p>List your skills here. You can use bullet points or paragraphs.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <p>Showcase your projects with brief descriptions. You can also link to live demos or repositories.</p>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <p>Provide your contact information or a form for visitors to reach out to you.</p>
+</section>
+<footer>
+
+</footer>
 
 </body>
 </html>
