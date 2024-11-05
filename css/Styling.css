@@ -1,51 +1,229 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and background video */
+html, body {
+  height: 100%; /* Ensure the body takes the full height */
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  overflow-y: auto; /* Ensure vertical scrolling is possible */
+}
+
+
+
 #bg-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1; /* Places it behind other content */
-    pointer-events: none; /* Prevents interaction */
-  }
-section {
-    padding: 10px 20px;
-    margin: 20px 0;
-    background-color:transparent;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: whitesmoke;
-  }
-  section h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: whitesmoke;
-  }
-  
-  section p {
-    text-align: center;
-    color:white;
-  }
-  
-  /* Custom style for the navbar */
-  .navbar-brand {
-    font-weight: bold;
-    font-size: 20px;
-    
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Navbar styling */
+.navbar-custom {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-custom .navbar-nav > li > a {
+  color: #fff;
+}
+
+.navbar-custom .navbar-toggle {
+  border-color: #fff;
+}
+
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+/* Section styling */
+.section1 {
+  padding: 30px;
+  margin: 20px 0;
+  background-color: transparent; /* White background for card effect */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.sectionprofile {
+  font-family: 'Dancing Script', cursive;
+}
+
+.section1:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+}
+
+.section1 h2 {
+  margin-bottom: 15px;
+  font-size: 2.5em;
+  color: #007BFF; /* Bootstrap primary color */
+  text-align: center; /* Centered heading */
+}
+
+.section1 p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #fff;
+  text-align: center; /* Centered text */
+}
+
+/* Home section specific styles */
+/* Home section specific styles */
+.sectionprofile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  padding: 40px; /* Space around the section */
+  background-color: transparent;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  margin: 20px; /* Margin to separate from other sections */
+}
+
+.home-content {
+  text-align: center; /* Center the text */
+}
+
+.profile-image {
+  width: 150px;
+  height: auto;
+  border-radius: 50%; /* Circular image */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.home-content h1 {
+  color: white; /* Primary color for the main heading */
+  font-size: 2.5em; /* Large font size for the heading */
+  margin-bottom: 15px; /* Space below the heading */
+}
+
+.home-content h3 {
+  color: white; /* Dark color for the subtitle */
+  font-size: 1.5em; /* Medium font size for the subtitle */
+  margin-bottom: 20px; /* Space below the subtitle */
+}
+
+.btn-box {
+  margin-top: 20px;
+}
+
+.btn {
+  margin: 0 10px;
+  color: white; /* Text color for buttons */
+}
+
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 20px 0;
+  background-color: whitesmoke;
+  color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .home-content {
+    padding: 10px;
   }
 
-  .navbar-brand a{
-    color: white;
+  .profile-image {
+    width: 100px; /* Smaller image on mobile */
   }
-  
-  /* Center the container content */
-  .container h3,
-  .container p {
-    text-align: center;
+
+  .section1 {
+    padding: 20px; /* Less padding on mobile */
   }
-  
+
+  .section1 h2 {
+    font-size: 2em; /* Smaller headings on mobile */
+  }
+
+  .section1 p {
+    font-size: 1em; /* Smaller text on mobile */
+  }
+}
+
+/* contact CSS */
+/* Contact form styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-form .form-group {
+  margin-bottom: 15px;
+}
+
+.contact-form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: white; /* Use primary color for label */
+}
+
+.contact-form .form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.contact-form .form-control:focus {
+  border-color: #007BFF; /* Primary color on focus */
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+/* Centered button styling */
+.contact-form .btn {
+  display: inline-block;
+  width: auto; /* Adjusts button width to its content */
+  padding: 10px 20px; /* Padding for a nicer button size */
+  font-size: 1.2em;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px auto 0; /* Center with top margin for spacing */
+  display: block;
+  text-align: center;
+}
+
+.contact-form .btn:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+}
+
+.projects-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 210px; /* Full viewport height for vertical centering */
+}
+
+.projects-img {
+  display: block;
+  height: 200px;
+  width: 400px;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 0 auto; /* This will help keep it horizontally centered */
+}

@@ -5,20 +5,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="/css/Styling.css">
+  <link rel="stylesheet" href="/css/Styling.css"> <!-- Ensure this path is correct -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  
 </head>
 <body>
 
-    <!-- Background Video -->
+<!-- Background Video -->
 <video id="bg-video" autoplay loop muted playsinline>
-    <source src="/Videos/bgvideo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <source src="/Videos/bgvideo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 <!-- Navbar -->
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -41,43 +42,67 @@
 </nav>
 
 <!-- Sections -->
-<section id="home">
-    <h2>Welcome to My Portfolio</h2>
-    <h3>Code enthusiast by day, bug hunter by night. As a final-year IT student, I've sharpened my skills in Java, C#, and more, and now I’m on the lookout for opportunities to turn big ideas into slick software. Let’s turn dreams into deploys!
-    </h3>
+<section id="home" class="sectionprofile">
+  <div class="home-content">
+    <img src="/Images/Profile-picture.jfif" alt="Thakeer Moola" class="profile-image">
+    <div>
+      <h1>Hi, I'm Thakeer Moola</h1>
+      <h3>Code enthusiast by day, bug hunter by night. As a final-year IT student, I've sharpened my skills in Java, C#, and more. Let’s turn dreams into deploys!</h3>
+      <div class="btn-box">
+        <a href="https://www.linkedin.com/in/thakeermoola2001/" class="btn btn-primary">Hire Me</a>
+        <a href="#" class="btn btn-primary">Let's Talk</a>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p>
-        I am a dedicated and hardworking final-year student pursuing a Diploma in IT in Software
-        Development. I have a strong passion for coding and have developed my proficiency in
-        various programming languages, including JAVA, HTML, PHP, JavaScript, C#, MVC ASP.NET
-        and Android Development as well as database management systems like MySQL and
-        Oracle.
-        My coursework and personal projects have given me a solid foundation in software
-        development principles, including object-oriented programming, database management,
-        and agile methodologies. I am actively seeking entry-level positions, internships or graduate
-        programmes where I can contribute to innovative software solutions while continuing to
-        learn and grow within the industry.</p>
+<section id="about" class="section1">
+  <h2>About Me</h2>
+  <p>I am a dedicated and hardworking final-year student pursuing a Diploma in IT. I am actively seeking entry-level positions, internships, or graduate programs where I can contribute to innovative software solutions.</p>
 </section>
 
-<section id="skills">
-    <h2>Skills</h2>
-    <p>List your skills here. You can use bullet points or paragraphs.</p>
+<section id="skills" class="section1">
+  <h2>Skills</h2>
+  <p>Java, C#, HTML, PHP, JavaScript, MVC ASP.NET, Android Development, MySQL, Oracle.</p>
 </section>
 
-<section id="projects">
-    <h2>Projects</h2>
-    <p>Showcase your projects with brief descriptions. You can also link to live demos or repositories.</p>
+<section id="projects" class="section1">
+  <h2>Projects</h2>
+  <p></p>
+
+  <div class="projects-container">
+    <img class="projects-img" src="/Images/devtech.png"></img>
+    <img class="projects-img" src="/Images/msfarms.png"></img>
+    <img class="projects-img" src="/Images/sparkle&setting.png"></img>
+  </div>
 </section>
 
-<section id="contact">
-    <h2>Contact Me</h2>
-    <p>Provide your contact information or a form for visitors to reach out to you.</p>
+
+<section id="contact" class="section1">
+  <h2>Contact Me</h2>
+  <form action="YOUR_FORM_SUBMISSION_URL" method="POST" class="contact-form">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" name="subject" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message</label>
+      <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary2">Send Message</button>
+  </form>
 </section>
+
 <footer>
-
+  <p>&copy; 2024 Thakeer Moola. All rights reserved.</p>
 </footer>
 
 </body>
