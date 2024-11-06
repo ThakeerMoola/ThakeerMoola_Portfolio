@@ -223,7 +223,22 @@ footer {
   display: block;
   height: 200px;
   width: 400px;
-  border-radius: 8px;
+  border-radius: 25px;
   padding: 10px;
-  margin: 0 auto; /* This will help keep it horizontally centered */
+  justify-content: center;
+  
+}
+
+.project-img:hover{
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    padding: 50px;
+  }
+
+  .projects-img{
+    width: 100px; /* Smaller image on mobile */
+  }
 }
