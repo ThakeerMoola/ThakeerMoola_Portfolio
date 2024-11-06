@@ -27,11 +27,14 @@ html, body {
 
 /* Navbar styling */
 .navbar-custom {
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: black;
+  position: sticky;
+  top: 0;
 }
 
 .navbar-custom .navbar-nav > li > a {
   color: #fff;
+ 
 }
 
 .navbar-custom .navbar-toggle {
@@ -219,6 +222,15 @@ footer {
   height: 210px; /* Full viewport height for vertical centering */
 }
 
+/* Logo Css */
+.Logo {
+  width: 50px;
+  height: 40px;
+ border-radius: 100%;
+  margin-top: -10px; 
+}
+
+
 .projects-img {
   display: block;
   height: 200px;
@@ -226,12 +238,13 @@ footer {
   border-radius: 25px;
   padding: 10px;
   justify-content: center;
-  
+  transition: transform 0.1s; /* Adds a smooth scaling transition effect */
 }
 
-.project-img:hover{
-  transform: scale(1.05);
+.projects-img:hover {
+  transform: scale(1.15); /* Slightly enlarges the image on hover */
 }
+
 
 @media (max-width: 768px) {
   .projects-container {
@@ -242,3 +255,17 @@ footer {
     width: 100px; /* Smaller image on mobile */
   }
 }
+
+#skills .icons {
+  display: flex;
+  justify-content: center; /* Centers the icons horizontally */
+  align-items: center; /* Centers icons vertically if they are in a row */
+  gap: 30px; /* Adds spacing between icons */
+  flex-wrap: wrap; /* Wraps icons if they don’t fit on a single line */
+}
+
+#skills .icons i {
+  font-size: 3rem; /* Increases icon size */
+  transition: transform 0.3s; /* Adds a smooth scaling transition effect */
+}
+
