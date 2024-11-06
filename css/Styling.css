@@ -269,3 +269,19 @@ footer {
   transition: transform 0.3s; /* Adds a smooth scaling transition effect */
 }
 
+.name-color {
+  color: rgb(11, 83, 164); /* Replace this with any color you'd like */
+  display: inline-block; /* Allows transformation animations */
+  animation: colorChange 2s ease-in-out infinite alternate;
+}
+
+@keyframes colorChange {
+  0% {
+    color: #63E6BE; /* Start color */
+    transform: scale(1); /* Initial size */
+  }
+  100% {
+    color: #11e83c; /* End color, adjust as desired */
+    transform: scale(1.1); /* Slightly larger */
+  }
+}
