@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/Styling.css"> <!-- Ensure this path is correct -->
+  <link rel="stylesheet" href="/css/Footer.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <!-- cdnjs - fontawesome -->
@@ -61,7 +62,17 @@
 
 <section id="about" class="section1">
   <h2>About Me</h2>
-  <p>I am a dedicated and hardworking final-year student pursuing a Diploma in IT. I am actively seeking entry-level positions, internships, or graduate programs where I can contribute to innovative software solutions.</p>
+  <p class="AboutMe">I am a dedicated and hardworking final-year student pursuing a Diploma in IT in Software 
+    Development. I have a strong passion for coding and have developed my proficiency in 
+    various programming languages, including JAVA, HTML, PHP, JavaScript, C#, MVC ASP.NET 
+    and Android Development as well as database management systems like MySQL and 
+    Oracle.</p>
+    <p class="AboutMe">
+    My coursework and personal projects have given me a solid foundation in software 
+    development principles, including object-oriented programming, database management, 
+    and agile methodologies. I am actively seeking entry-level positions, internships or graduate 
+    programmes where I can contribute to innovative software solutions while continuing to 
+    learn and grow within the industry.</p>
 </section>
 
 <section id="skills" class="section1">
@@ -114,13 +125,68 @@
       <label for="message">Message</label>
       <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
     </div>
+    <input type="hidden" name="redirect" value="http://127.0.0.1:5500/Portfolio/index.html#contact">
     <button type="submit" class="btn btn-primary2">Send Message</button>
   </form>
 </section>
 
-<footer>
-  <p>&copy; 2024 Thakeer Moola. All rights reserved.</p>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>Home</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>About</h4>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#">Resume</a></li>
+                
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Projects</h4>
+                  <ul>
+                    
+                    <li><a href="#projects">Projects</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>Contact</h4>
+                    <div class="social-links">
+                      <a href="https://wa.me/+27614128506"><i class="fa-brands fa-whatsapp fa-beat" style="color: #00ff2a;"></i></a>
+                      <a href="#"><i class="fa-solid fa-envelope fa-beat" style="color: #070c15;"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin-in fa-beat" style="color: #013257;"></i></a>
+                      <a href="#"><i class="fa-brands fa-github fa-beat" style="color: #ffffff;"></i></a>
+                    </div>
+           </div>
+    </div>
 </footer>
+
+<!-- script for sweat alert message  -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+  // Add an event listener to the form submission
+  document.querySelector(".contact-form").addEventListener("submit", function (event) {
+      // Prevent the default form submission
+      event.preventDefault();
+      // Trigger Swal.fire after form submission
+      Swal.fire({
+          title: "Success",
+          text: "Message sent successfully",
+          icon: "success"
+      }).then(() => {
+          // After the user acknowledges the Swal.fire message, submit the form
+          event.target.submit();
+      });
+  });
+</script>
 
 </body>
 </html>

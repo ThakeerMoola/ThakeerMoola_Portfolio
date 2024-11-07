@@ -75,6 +75,12 @@ html, body {
   margin-bottom: 15px;
   color: #fff;
   text-align: center; /* Centered text */
+
+} 
+.AboutMe{
+font-family:Georgia, 'Times New Roman', Times, serif;
+font-weight: 450;
+font-style: oblique;
 }
 
 /* Home section specific styles */
@@ -202,7 +208,7 @@ footer {
   padding: 10px 20px; /* Padding for a nicer button size */
   font-size: 1.2em;
   color: #fff;
-  background-color: black;
+  background-color: transparent;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -212,7 +218,7 @@ footer {
 }
 
 .contact-form .btn:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background: linear-gradient(135deg, rgba(173, 216, 230, 0.8), rgba(0, 0, 0, 0.8)); 
 }
 
 .projects-container {
