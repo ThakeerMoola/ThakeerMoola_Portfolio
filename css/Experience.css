@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main section container */
+.section-exp {
+    padding: 2rem;
+    background-color: transparent;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+/* Section title styling */
+.section-exp h2 {
+    margin-bottom: 15px;
+    font-size: 2.5em;
+    color: #007BFF; /* Bootstrap primary color */
+    text-align: center; /* Centered heading */
+}
+
+/* Main content container */
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* Row styling for the main sections */
+.row2 {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+}
+
+/* Individual columns styling */
+.col2 {
+    flex: 1;
+    background: linear-gradient(135deg, rgba(186, 215, 232, 0.9), rgba(148, 187, 233, 0.8));
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling within columns */
+.title h2 {
+    color: #444;
+    font-size: 1.5rem; 
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Box styling */
+.box2 {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fafafa;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box2:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Box heading styles */
+.box2 h4 {
+    color: #888;
+    font-size: 1.1rem; 
+    margin-bottom: 0.25rem;
+}
+
+.box2 h3 {
+    font-size: 1.4rem; 
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.box2 p {
+    color: #666;
+    font-size: 1.1rem; 
+    line-height: 1.6;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+    .row2 {
+        flex-direction: column;
+    }
+
+    .col2 {
+        margin-bottom: 1rem;
+    }
+}
