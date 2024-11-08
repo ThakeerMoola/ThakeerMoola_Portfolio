@@ -69,19 +69,19 @@
 
 /* Box heading styles */
 .box2 h4 {
-    color: #888;
+    color: black;
     font-size: 1.1rem; 
     margin-bottom: 0.25rem;
 }
 
 .box2 h3 {
     font-size: 1.4rem; 
-    color: #333;
+    color: black;
     margin-bottom: 0.5rem;
 }
 
 .box2 p {
-    color: #666;
+    color: black;
     font-size: 1.1rem; 
     line-height: 1.6;
 }
